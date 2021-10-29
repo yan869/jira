@@ -1,0 +1,42 @@
+<!-- 
+    ts里面的array  是指里面的子元素都是同一种类型的
+
+    tuple 是混合类型的数组  数量固定,类型可以各异
+    常用于custom hook里面
+    const [users,setUsers]=useState([])
+
+
+    类型推断  
+    :boolean 返回的结果的类型
+    Fn:()=>void  不传参不返回 或者返回undefined
+
+    const isFalsy=(value:any):boolean=>{
+        return true
+    }
+   const isFalsy=(Fn:()=>void)=>{
+        return true
+    }
+
+
+    enum类型
+    enum Color{
+        Green,
+        yellow,
+    }
+    let c:Color=Color.green;
+
+    unknown类型;
+    是any的严格版
+
+    interface  声明自己需要的类型
+
+    .d.ts  
+    js文件+.d.ts文件 相当于就是ts文件
+
+-->
+
+<!--
+     泛型
+     传入的是什么类型 返回的就是什么类型
+window+鼠标,查看类型
+-->
